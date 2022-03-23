@@ -12,14 +12,22 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta = new ContaCorrente(847, 489754);
+            // pagina?argumentos
+            // 012345678
 
-            FuncionarioAutenticavel carlos = null;
-            carlos.Autenticar("kjhasfkjas");
-            
-            Console.WriteLine(conta.Numero);
+
+
+            string url = "paginas?argumentos";
+
+
+            Console.WriteLine(url);
+            string argumentos = url.Substring(7);
+            Console.WriteLine(argumentos);
+
+
 
             Console.ReadLine();
         }
+
     }
 }
